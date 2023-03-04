@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+.app{
+ margin:40px auto ;
+ max-width: 840px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .app button{
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app button:hover{
+  background: crimson;
+  color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardgrid{
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  /* grid template coloums will get 1fr 4 times so basically 4 in one coloumns */
 }
